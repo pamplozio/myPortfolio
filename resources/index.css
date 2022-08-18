@@ -1,21 +1,106 @@
 body {
     font-family: Roboto Mono, monospace;
-    max-width: 900px;
+    max-width: 950px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    color: black;
+    color: aliceblue;
+    background-color: #010417; /*dark blue*/
+    font-weight: bold;
+    
 }
 
 .flex-container {
+    /*To spread out the items inside the top nav bar*/
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-between;
+    /*--------------------------------*/
+    align-items: baseline;
+
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    
-    
+.nav-items {
+    display: inline-flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.nav-items li {
+    padding: 0 10px;
+}
+
+#me-container {
+     /*To spread out the items inside flex container*/
+     display: flex;
+     justify-content: space-between;
+     /*--------------------------------*/
+     margin-top: 40px;
+}
+
+.profile-pic {
+    width: 400px;
+}
+
+#me-text-container {
+    margin-top: 40px;
+    width: 525px;
+}
+
+/*
+.button-my-projects {
+    font-family: Roboto Mono;
+    font-weight: 700;
+    border-radius: 3rem; 
+    overflow: hidden;
+    color: aliceblue;
+    background-color: #ab4007;
+    cursor: pointer;
+    padding: .8rem 1.8rem;
+    margin-left: 150px;
+    box-shadow: 0 9px     
+}
+
+.button-my-projects:hover {
+    background-color:  #1b36a1;
+    transition: 0.7s;
+}
+
+.button-my-projects:active {
+    background-color: #1b36a1;
+    box-shadow: 0 5px lightblue;
+    transform: translateY(10px);
+}
+
+*/
+
+.button-my-projects {
+    font-family: Roboto Mono;
+    font-weight: 700;
+    border-radius: 3rem; 
+    overflow: hidden;
+    color: aliceblue;
+    background-color: #ab4007;
+    cursor: pointer;
+    padding: .8rem 1.8rem;
+    margin-left: 150px;
+    transition: 0.2s all;
+}
+
+/*adding transformation when the button is active*/
+
+.button-my-projects:active {
+    /*sca;ing button to 0.98 to its original size*/
+    transform: scale(0.95);
+    /*-------------------------------------*/    
+}
+
+.button-my-projects:hover {
+    background-color:  #1b36a1;
+    transition: 0.2s;
 }

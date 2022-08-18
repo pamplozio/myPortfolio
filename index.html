@@ -18,16 +18,47 @@
     <title>Giuseppe Rosso</title>
 </head>
 <body>
-    <header clas="flex-container">
-        <nav>
+    <header>
+        <nav class="flex-container">
             <h2 id="full-name">Giuseppe Rosso</h2>
             <ul class="nav-items">
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li id="about-me">
+                    <a href="#">About Me</a>
+                </li>
+                <li id="projects">
+                    <a href="#">Projects</a>
+                </li>
+                <li id="contact">
+                    <a href="#">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="me-section">
+            <div id="me-container">
+                <div id="me-text-container">
+                    <h3>About Me</h2>
+                    <p>Hello, I am Giuseppe, a Web Developer base in London.
+                        <br>
+                        <br>
+                    I have comprehensive knowlege in forging strong client
+                        <br>
+                    relationships.
+                        <br>
+                    I have strong analytical critical thinking as well as problem
+                    solving capabilities used to mitigate risks and issues,
+                    allowing projects to meet deadlines and budgets.
+                </p>
+                </div>
+                <img src="./resources/myProfile.jpeg" alt="Giuseppe Rosso profile picture" class="profile-pic">
+            </div>
+            <button class="button-my-projects">
+                My Projects   
+                <span></span><span></span><span></span><span></span> 
+            </button>
+        </section>
+    </main>
     
 
     <script src="./resources/main.js"></script>
