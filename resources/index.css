@@ -95,7 +95,7 @@ body {
 /*adding transformation when the button is active*/
 
 .button-my-projects:active {
-    /*sca;ing button to 0.98 to its original size*/
+    /*scaling button to 0.98 to its original size*/
     transform: scale(0.95);
     /*-------------------------------------*/    
 }
@@ -103,4 +103,123 @@ body {
 .button-my-projects:hover {
     background-color:  #1b36a1;
     transition: 0.2s;
+}
+
+.buttonMySkills {
+    font-family: Roboto Mono;
+    font-weight: 700;
+    border-radius: 3rem; 
+    overflow: hidden;
+    color: aliceblue;
+    background-color: #ab4007;
+    cursor: pointer;
+    padding: .8rem 1.8rem;
+    margin-top: 100px;
+    margin-left: 160px;
+    transition: 0.2s all;
+}
+
+/*adding transformation when the button is active*/
+
+.buttonMySkills:active {
+    /*scaling button to 0.98 to its original size*/
+    transform: scale(0.95);
+    /*-------------------------------------*/    
+}
+
+.buttonMySkills:hover {
+    background-color:  #1b36a1;
+    transition: 0.2s;
+}
+
+
+#favSkills {
+    display: none; /*put flex if you want to display the logos back  */
+    justify-content: space-between;
+    font-size: 32px;
+    margin-top: 75px;
+    margin-left: 250px;
+    margin-right: 250px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: fadeIn 3s;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+
+#logoDisplay {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+    margin-left: 25px;
+    margin-right: 450px;
+}
+
+#htmlPic {
+    display: none;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+#cssPic {
+    display: none;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: fadeIn 2s;
+}
+
+#jsPic {
+    display: none;
+    margin-left: 10px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: fadeIn 4s;
+}
+
+#gitHubPic {
+    display: none;
+    margin-left: 7px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: fadeIn 6s;
+}
+
+#gitPic {
+    display: none;
+    margin-right: -10px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: fadeIn 8s;
+}
+
+#excelPic {
+    display: none;
+    
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: fadeIn 10s; 
 }
