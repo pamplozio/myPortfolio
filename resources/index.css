@@ -79,16 +79,25 @@ body {
 
 */
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 50px;
+    margin-left: 325px;
+
+}
+
 .button-my-projects {
     font-family: Roboto Mono;
     font-weight: 700;
     border-radius: 3rem; 
+    width: 200px;
     overflow: hidden;
     color: aliceblue;
     background-color: #ab4007;
     cursor: pointer;
     padding: .8rem 1.8rem;
-    margin-left: 150px;
     transition: 0.2s all;
 }
 
@@ -109,13 +118,14 @@ body {
     font-family: Roboto Mono;
     font-weight: 700;
     border-radius: 3rem; 
+    width: 200px;
     overflow: hidden;
     color: aliceblue;
     background-color: #ab4007;
     cursor: pointer;
     padding: .8rem 1.8rem;
     margin-top: 100px;
-    margin-left: 160px;
+    
     transition: 0.2s all;
 }
 
@@ -163,8 +173,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
-    margin-left: 25px;
-    margin-right: 450px;
 }
 
 #htmlPic {
@@ -222,4 +230,101 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     animation: fadeIn 10s; 
+}
+
+@media only screen and (max-width: 970px), screen and (max-height: 570px) {
+    header {
+        padding: 0 30px;
+    }
+
+    #me-text-container {
+        margin-top: 10px;
+        padding: 0 30px;
+    }
+
+    .profile-pic {
+        padding-right: 30px;
+    }
+
+    .button-my-projects {
+        margin-top: 50px;
+    }
+
+    #logoDisplay {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .profile-pic {
+        margin-top: 30px;
+        height: 300px;
+        width: 300px;
+    }
+
+    #me-container {
+        margin-top: -20px;
+    }
+
+    .buttons {
+       margin-left: 300px;
+        
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .buttons {
+        margin-left: 250px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #me-container {
+        margin-top: -20px;
+    }
+
+    .profile-pic {
+        margin-top: 70px;
+        height: 250px;
+        width: 250px;
+    }
+
+    .buttons {
+        margin-left: 225px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #me-container {
+        display: block;
+    } 
+
+    #me-text-container {
+        margin-top: 30px;
+    }
+
+    .profile-pic {
+        margin-top: 50px;
+        margin-left: 230px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .buttons {
+        margin-left: 200px;
+    }
+
+    /* logos to be centered!!! */
+    #logoDisplay {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        padding-right: -100px;
+        
+    }
+    /*---------------------------------- */
+   
+
+
 }
