@@ -1,4 +1,5 @@
-function appear() {
+//----------to show the icons for the skills-------------- 
+function showSkills() {
     document.getElementById('htmlPic').style.display = 'block';
 
     document.getElementById('cssPic').style.display = 'block';
@@ -11,6 +12,17 @@ function appear() {
 
     document.getElementById('excelPic').style.display = 'block';
 
+}
+//------------------------------------------------------
+
+//to show the icons for the contacts-------------------
+
+
+function showContacts() {
+    
+    document.getElementById('linkedInPic').style.display = 'block';
+
+    document.getElementById('emailContact').style.display = 'block';
 }
 
 

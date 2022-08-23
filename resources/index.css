@@ -7,7 +7,6 @@ body {
     color: aliceblue;
     background-color: #010417; /*dark blue*/
     font-weight: bold;
-    
 }
 
 .flex-container {
@@ -81,11 +80,9 @@ body {
 
 .buttons {
     display: flex;
-    flex-direction: column;
-    
-    margin-top: 50px;
-    margin-left: 325px;
-
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
 .button-my-projects {
@@ -124,8 +121,6 @@ body {
     background-color: #ab4007;
     cursor: pointer;
     padding: .8rem 1.8rem;
-    margin-top: 100px;
-    
     transition: 0.2s all;
 }
 
@@ -138,6 +133,32 @@ body {
 }
 
 .buttonMySkills:hover {
+    background-color:  #1b36a1;
+    transition: 0.2s;
+}
+
+.buttonMyContacts {
+    font-family: Roboto Mono;
+    font-weight: 700;
+    border-radius: 3rem; 
+    width: 200px;
+    overflow: hidden;
+    color: aliceblue;
+    background-color: #ab4007;
+    cursor: pointer;
+    padding: .8rem 1.8rem;
+    transition: 0.2s all;
+}
+
+/*adding transformation when the button is active*/
+
+.buttonMyContacts:active {
+    /*scaling button to 0.98 to its original size*/
+    transform: scale(0.95);
+    /*-------------------------------------*/    
+}
+
+.buttonMyContacts:hover {
     background-color:  #1b36a1;
     transition: 0.2s;
 }
@@ -173,6 +194,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
+    margin-left: 20px;
 }
 
 #htmlPic {
@@ -231,6 +253,41 @@ body {
     transform: translate(-50%, -50%);
     animation: fadeIn 10s; 
 }
+
+#contactDisplay {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0 240px 0 240px;
+}
+
+#linkedInPic {
+    display: none;
+    width: 45px;
+    height: 45px;
+    
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+#emailContact {
+    display: none;
+    
+    animation: fadeIn 4s;
+}
+
+
+
 
 @media only screen and (max-width: 970px), screen and (max-height: 570px) {
     header {
@@ -325,6 +382,5 @@ body {
     }
     /*---------------------------------- */
    
-
-
 }
+

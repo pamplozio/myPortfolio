@@ -63,8 +63,11 @@
             <button class="button-my-projects">
                 My Projects    
             </button>
-            <button class="buttonMySkills" onclick="appear()">
+            <button class="buttonMySkills" onclick="showSkills()">
                 My Skills
+            </button>
+            <button class="buttonMyContacts" onclick="showContacts()">
+                My contacts    
             </button>
         </section>
         <!--this section in order to copy logos-->
@@ -90,15 +93,26 @@
                 </div>
             </section>
         <!--------------------------------------------->
-            
-            <section id="logoDisplay">
+        <!--Skills logos------------------------------->
+        <section id="logoDisplay">
             <img id="htmlPic" src="./resources/HtmlLogo.png" alt="html logo">
             <img id="cssPic" src="./resources/cssLogo.png" alt="css logo">
             <img id="jsPic" src="./resources/jsLogo.png" alt="JS logo">
             <img id="gitHubPic" src="./resources/gitHubLogo.png" alt="gitHubLogo">
             <img id="gitPic" src="./resources/gitLogo.png" alt="Git Logo">
             <img id="excelPic" src="./resources/excelLogo.png" alt="Excel Logo">
-            </section>
+        </section>
+        <!-------------------------------------------->
+        <!--contacts logos---------------------------->
+        <section id="contactDisplay">
+            <a href="https://www.linkedin.com/in/rossogiuseppe?original_referer=" target="_blank">
+            <img id="linkedInPic" src="./resources/linkedInLogo.png" alt="linkedIn logo" >
+            </a>
+            <div id="linkedIn">
+            <p id="emailContact">giusepperosso@hotmail.com</p>
+        </section>
+        <!-------------------------------------------->
+
     </main>
 
     <!---------connecting JS file----------->
