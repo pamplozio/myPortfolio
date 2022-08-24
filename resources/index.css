@@ -317,6 +317,16 @@ body {
     }
 }
 
+@media only screen and (max-width: 870px) {
+    #contactDisplay {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
 @media only screen and (max-width: 780px) {
     .profile-pic {
         margin-top: 30px;
@@ -326,6 +336,25 @@ body {
 
     #me-container {
         margin-top: -20px;
+    }
+
+    #contactDisplay {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 25px 25px;
+    }
+
+    .button-my-projects {
+        width: 150px;
+    }
+
+    .buttonMySkills {
+        width: 150px;
+    }
+
+    .buttonMyContacts {
+        width: 150px;
     }
 
 }
@@ -342,20 +371,15 @@ body {
         width: 250px;
     }
 
-    .button-my-projects {
-        width: 150px
-    }
+   
 
-    .buttonMySkills {
-        width: 150px;
-    }
-
-    .buttonMyContacts {
-        width: 150px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        margin: auto;
+    }
+
     #me-container {
         display: block;
     } 
@@ -370,6 +394,39 @@ body {
         height: 150px;
         width: 150px;
     }
+    /*
+    the more i push the container to the right the more it shirnks as is if there is a barrier...
+    .buttons {
+        margin-left: 150px;
+    }
+    */
+
+    .button-my-projects {
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .buttonMySkills {
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .buttonMyContacts {
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+
 
     
 
@@ -378,20 +435,4 @@ body {
     /*---------------------------------- */
    
 }
-
-@media only screen and (max-width: 580px) {
-    .buttons {
-        padding-left: 25px
-    }
-
-    #logoDisplay {
-        padding-left: 30px;
-    }
-
-    #contactDisplay {
-        padding-right: 150px;
-    }
-        
-}
-
 
