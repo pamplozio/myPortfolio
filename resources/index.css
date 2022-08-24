@@ -287,6 +287,11 @@ body {
 }
 
 
+@media only screen and (max-width: 1000px) {
+    body {
+        max-width: 900px;
+    }
+}
 
 
 @media only screen and (max-width: 970px), screen and (max-height: 570px) {
@@ -301,11 +306,10 @@ body {
 
     .profile-pic {
         padding-right: 30px;
+        width: 300px;
+        height: 275px;
     }
 
-    .button-my-projects {
-        margin-top: 50px;
-    }
 
     #logoDisplay {
         margin-left: 40px;
@@ -324,17 +328,8 @@ body {
         margin-top: -20px;
     }
 
-    .buttons {
-       margin-left: 300px;
-        
-    }
 }
 
-@media only screen and (max-width: 720px) {
-    .buttons {
-        margin-left: 250px;
-    }
-}
 
 @media only screen and (max-width: 650px) {
     #me-container {
@@ -347,8 +342,16 @@ body {
         width: 250px;
     }
 
-    .buttons {
-        margin-left: 225px;
+    .button-my-projects {
+        width: 150px
+    }
+
+    .buttonMySkills {
+        width: 150px;
+    }
+
+    .buttonMyContacts {
+        width: 150px;
     }
 }
 
@@ -368,19 +371,27 @@ body {
         width: 150px;
     }
 
-    .buttons {
-        margin-left: 200px;
-    }
+    
 
     /* logos to be centered!!! */
-    #logoDisplay {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 75px;
-        padding-right: -100px;
-        
-    }
+  
     /*---------------------------------- */
    
 }
+
+@media only screen and (max-width: 580px) {
+    .buttons {
+        padding-left: 25px
+    }
+
+    #logoDisplay {
+        padding-left: 30px;
+    }
+
+    #contactDisplay {
+        padding-right: 150px;
+    }
+        
+}
+
 
