@@ -395,10 +395,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        margin: auto;
-    }
-
+   
     #me-container {
         display: block;
     } 
@@ -419,6 +416,11 @@ body {
         margin-left: 150px;
     }
     */
+
+    .buttons {
+        max-width: 950px;
+        margin: 20px auto;
+    }
 
     .button-my-projects {
         width: 100px;
