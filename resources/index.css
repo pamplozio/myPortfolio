@@ -9,6 +9,8 @@ body {
     color: aliceblue;
     background-color: #010417; /*dark blue*/
     font-weight: bold;
+    width: 100%vw;
+    margin: 0%;
 }
 
 /*------------------------------------------------------------*/
@@ -91,10 +93,12 @@ body {
 
 /*-----------------------------------------------*/
 .buttons {
-    max-width: 950px;
+    
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
+    
+    max-width: 950px;
     margin: 40px auto;
 }
 
@@ -401,7 +405,7 @@ body {
     } 
 
     #me-text-container {
-        margin-top: 30px;
+        margin-top: 30px auto;
     }
 
     .profile-pic {
@@ -418,11 +422,16 @@ body {
     */
 
     .buttons {
-        max-width: 950px;
-        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px auto;
     }
 
     .button-my-projects {
+        
+        position: relative;
         width: 100px;
         height: 45px;
         font-size: 12px;
@@ -431,6 +440,8 @@ body {
     }
 
     .buttonMySkills {
+        
+        position: relative;
         width: 100px;
         height: 45px;
         font-size: 12px;
@@ -439,6 +450,8 @@ body {
     }
 
     .buttonMyContacts {
+        
+        position: relative;
         width: 100px;
         height: 45px;
         font-size: 12px;
